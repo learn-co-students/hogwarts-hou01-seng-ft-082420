@@ -51,6 +51,11 @@
   color: purple;
 }
 
+.pig-image {
+  width: 200px;
+  height: auto;
+}
+
 ul {
   list-style-type: none;
   list-style: none;
@@ -137,4 +142,8 @@ ul {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
 }
