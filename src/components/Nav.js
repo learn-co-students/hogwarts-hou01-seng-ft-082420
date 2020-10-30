@@ -11,7 +11,7 @@ const Nav = (props) => {
       <span className="normalText">A React App for County Fair Hog Fans</span>
       <br/>
       <label>Sort/Filter Pigs: </label>
-      <select onChange={props.handleFilter}>
+      <select onChange={props.handleFilter} className="ui selection dropdown">
         <option value='all'>All</option>
         <option value='greased'>Greased</option>
         <option value='weight'>Weight</option>

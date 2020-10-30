@@ -10,14 +10,14 @@ class App extends Component {
     this.state ={
       hogs: hogs,
       filter: 'all',
-      hiddenArr: []
+      hiddenHogs: []
     }
   }
 
    hideThatPig = (hog) => {
      console.log("Hide this pig! No time to explain!", hog)
         this.setState({
-            hiddenArr: [...this.state.hiddenArr, hog]
+          hiddenHogs: [...this.state.hiddenHogs, hog]
         })
     }
 
@@ -55,7 +55,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav handleFilter ={this.handleFilter}/>
-        <PigDisplay hogs = {this.state.hogs} hideThatPig = {this.hideThatPig} hiddenHogs = {this.state.hiddenArr} />
+        <PigDisplay hogs = {this.state.hogs} hideThatPig = {this.hideThatPig} hiddenHogs = {this.state.hiddenHogs} />
       </div>
     );
   }
