@@ -53,7 +53,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App " >
         <Nav handleFilter ={this.handleFilter}/>
         <PigDisplay hogs = {this.state.hogs} hideThatPig = {this.hideThatPig} hiddenHogs = {this.state.hiddenHogs} />
       </div>
