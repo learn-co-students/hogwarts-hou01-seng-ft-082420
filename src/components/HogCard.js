@@ -20,7 +20,7 @@ constructor(){
         let pigImage = require(`../hog-imgs/${hog.name.toLowerCase().split(' ').join('_')}.jpg`)
         console.log(pigImage)
         return(
-            <div className ='ui eight wide column ui card pigTile'>
+            <div className ='ui grid ui card pigTile'>
                 <div style={this.props.hiddenHogs.includes(hog)? {visibility: 'hidden'} : null }  onClick={(this.handleClick)}>
                 <h3>{hog.name}</h3>
                 <img src= {pigImage} alt={hog.name} style={{height: '180px'}}/>
